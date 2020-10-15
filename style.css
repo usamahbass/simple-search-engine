@@ -1,0 +1,43 @@
+.container {
+    padding: 20px;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.searchBoxContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    width: 690px;
+    border-radius: 36px;
+    padding: 10px 10px 10px 20px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.searchBoxContainer:hover, .focus.searchBoxContainer {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.searchBoxIcon {
+    height: 24px;
+    width: 24px;
+}
+
+.searchBoxInput {
+    border: none;
+    width: calc(100% - 30px);
+}
+
+.searchBoxIcon svg {
+    fill: #4285f4;
+}
+
+.searchBoxInput:focus {
+    outline: none;
+}
