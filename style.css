@@ -1,3 +1,14 @@
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
 .container {
     padding: 20px;
 }
@@ -41,3 +52,159 @@
 .searchBoxInput:focus {
     outline: none;
 }
+
+.displayUrl {
+    font-weight: normal;
+    font-size: small;
+    line-height: 1.58;
+}
+
+.rc {
+    position: relative;
+}
+
+.card{
+    
+    position:relative;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word;
+    background-color:#fff;
+    background-clip:border-box;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius:.25rem
+}
+
+.cardBody{
+    -ms-flex:1 1 auto;
+    flex:1 1 auto;
+    min-height:1px;
+    padding:0 20px 12px;
+}
+
+#optionsbar {
+    width: 100%;
+    height: 50px;
+    border-width: 0px;
+    border-bottom: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Arial';
+    font-size: 13px;
+    color: rgb(112, 112, 112);
+    padding-top: 64px;
+}
+
+#optionsmenu1 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 150px;
+}
+
+#optionsmenu1 li {
+    padding: 0px 10px 15px 20px;
+}
+
+#optionsmenuactive {
+    color: #4285F4;
+    font-weight: bold;
+    position: relative;
+    z-index: -1;
+}
+
+.searchResult p {
+    width: 625px;
+    font-size: 13px;
+    margin-top: 10px;
+    color: rgb(82, 82, 82);
+}
+
+#optionsmenuactive::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #4285F4;
+    left: 5px;
+    bottom: 0px;
+}
+
+#optionsmenu2 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 100px;
+}
+
+#optionsmenu2 li {
+    padding: 0px 10px 15px 20px;
+}
+
+#searchResultsArea {
+    margin-left: 150px;
+    font-family: 'Arial';
+}
+
+#searchResultsNumber {
+    margin-bottom: 17px;
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 8px;
+}
+
+.searchResult {
+    margin-left: 8px;
+    margin-top: 0px;
+}
+
+.searchResult h2 {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: normal;
+    color: rgb(29, 1, 189);
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.searchResult span.bold {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.searchResult .subbold {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(99, 98, 98);
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+.searchResult a {
+    text-decoration: none;
+}
+
+.searchResult button {
+    font-size: 10px;
+    line-height: 14px;
+    color: rgb(63, 63, 63);
+    margin-bottom: 0px;
+    padding: 0px;
+    border-width: 0px;
+    background-color: white;
+}
+
+
+
